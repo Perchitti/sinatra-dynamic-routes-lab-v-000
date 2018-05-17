@@ -26,13 +26,13 @@ end
     @num_1 = params[:number1].to_i
     @num_2 = params[:number2].to_i
     case params[:operation].downcase
-    when 'add' || '+'
+    when 'add'
       (@num1 + @num2).to_s
-    when 'subtract' || '-'
+    when 'subtract'
       (@num1 - @num2).to_s
-    when 'multiply' || '*'
+    when 'multiply'
       (@num1 * @num2).to_s
-    when 'divide' || '/'
+    when 'divide'
       (@num1 / @num2).to_s
     else
       "Error"
@@ -40,6 +40,6 @@ end
   end
 
 
-    
+
 
 end

@@ -26,7 +26,11 @@ end
     @operation = "*" || "+" || "-" || "/"
     @num_1 = params[:number1].to_i
     @num_2 = params[:number2].to_i
-    "#{@num_1}" @operation "#{@num_2}"
+    case params[:operation].downcase
+    when 'add' || '+'
+      (@num1 + @num2).to_s
+    when 'subtract' || '-'
+
     end
 
 end
